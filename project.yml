@@ -1,0 +1,80 @@
+name: ParquetPreview
+options:
+  bundleIdPrefix: de.cwitzl
+  deploymentTarget:
+    macOS: "13.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "-"
+    PROVISIONING_PROFILE_SPECIFIER: ""
+    ENABLE_HARDENED_RUNTIME: YES
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+    DEAD_CODE_STRIPPING: YES
+targets:
+  ParquetPreview:
+    type: application
+    platform: macOS
+    sources: [App]
+    dependencies:
+      - target: ParquetQuickLook
+        embed: true
+        codeSign: true
+    entitlements:
+      path: App/App.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Parquet Preview
+        LSApplicationCategoryType: public.app-category.developer-tools
+        NSHumanReadableCopyright: ""
+        UTImportedTypeDeclarations:
+          - UTTypeIdentifier: org.apache.parquet
+            UTTypeDescription: Apache Parquet
+            UTTypeConformsTo: [public.data]
+            UTTypeTagSpecification:
+              public.filename-extension: [parquet, parq]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.cwitzl.ParquetPreview
+        GENERATE_INFOPLIST_FILE: NO
+  ParquetQuickLook:
+    type: app-extension
+    platform: macOS
+    sources: [Preview]
+    preBuildScripts:
+      - name: Build Rust (parquet_ql)
+        script: '"$SRCROOT/scripts/build-rust.sh"'
+        basedOnDependencyAnalysis: false
+        outputFiles:
+          - $(SRCROOT)/rust/target/universal/libparquet_ql.a
+    entitlements:
+      path: Preview/Preview.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.files.user-selected.read-only: true
+    info:
+      path: Preview/Info.plist
+      properties:
+        CFBundleDisplayName: Parquet Quick Look
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.quicklook.preview
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).PreviewProvider
+          NSExtensionAttributes:
+            QLIsDataBasedPreview: true
+            QLSupportsSearchableItems: false
+            QLSupportedContentTypes: [org.apache.parquet]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.cwitzl.ParquetPreview.QuickLook
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_OBJC_BRIDGING_HEADER: Preview/Bridging-Header.h
+        HEADER_SEARCH_PATHS: $(SRCROOT)/rust/include
+        LIBRARY_SEARCH_PATHS: $(SRCROOT)/rust/target/universal
+        OTHER_LDFLAGS: [-lparquet_ql]

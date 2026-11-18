@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		225DC912D383FB0384314CE8 /* ParquetQuickLook.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B94F62A55C1A546129F9A2B0 /* ParquetQuickLook.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		40DEDDB9BF0293C7FD4F6FA0 /* ParquetPreviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC80C981DF623EFA4F291E1 /* ParquetPreviewApp.swift */; };
+		BC8640372267B6BF2BF96230 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B3F9AE4B7AEBFC119D8263 /* PreviewProvider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78E2B342AC8FF14EA1FA9543 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4CDA5E2407FD0679D44B72C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 009042F38E08A1FDAAF8E01C;
+			remoteInfo = ParquetQuickLook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E2A90999F27DB9CDC694A0C3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				225DC912D383FB0384314CE8 /* ParquetQuickLook.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0FE72EF00484EBA97AF57060 /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		1BC80C981DF623EFA4F291E1 /* ParquetPreviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParquetPreviewApp.swift; sourceTree = "<group>"; };
+		25B4072C7A861CBA26282731 /* ParquetPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParquetPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35B3F9AE4B7AEBFC119D8263 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		B94F62A55C1A546129F9A2B0 /* ParquetQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ParquetQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C913E7AD52EB7D29BF05A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E17091766C9CDBE69CD8EDB4 /* Preview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Preview.entitlements; sourceTree = "<group>"; };
+		E1AD27B6F14252D7DE739943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E4C10949E57DCD9B11E66EEE /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		12D732AA7407FB50F4C72051 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				E4C10949E57DCD9B11E66EEE /* Bridging-Header.h */,
+				D4C913E7AD52EB7D29BF05A5 /* Info.plist */,
+				E17091766C9CDBE69CD8EDB4 /* Preview.entitlements */,
+				35B3F9AE4B7AEBFC119D8263 /* PreviewProvider.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		36B14B95511DAFE9CA04099D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0FE72EF00484EBA97AF57060 /* App.entitlements */,
+				E1AD27B6F14252D7DE739943 /* Info.plist */,
+				1BC80C981DF623EFA4F291E1 /* ParquetPreviewApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4403DADFE51C0D7311DA78D9 = {
+			isa = PBXGroup;
+			children = (
+				36B14B95511DAFE9CA04099D /* App */,
+				12D732AA7407FB50F4C72051 /* Preview */,
+				9490F3557C87FBC0D68E46CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9490F3557C87FBC0D68E46CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25B4072C7A861CBA26282731 /* ParquetPreview.app */,
+				B94F62A55C1A546129F9A2B0 /* ParquetQuickLook.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		009042F38E08A1FDAAF8E01C /* ParquetQuickLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03AFFCCD715848CB2DAE2AB9 /* Build configuration list for PBXNativeTarget "ParquetQuickLook" */;
+			buildPhases = (
+				ECF370657AEDFFEFE433F03D /* Build Rust (parquet_ql) */,
+				40805D6269D30F55C8D7323C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParquetQuickLook;
+			packageProductDependencies = (
+			);
+			productName = ParquetQuickLook;
+			productReference = B94F62A55C1A546129F9A2B0 /* ParquetQuickLook.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D836B9305F45281898FFFD33 /* ParquetPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8699895AE0252BB7C9EB34F /* Build configuration list for PBXNativeTarget "ParquetPreview" */;
+			buildPhases = (
+				6C9CAE952210B352C1BAA989 /* Sources */,
+				E2A90999F27DB9CDC694A0C3 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8B24CF906FEC0035709634B /* PBXTargetDependency */,
+			);
+			name = ParquetPreview;
+			packageProductDependencies = (
+			);
+			productName = ParquetPreview;
+			productReference = 25B4072C7A861CBA26282731 /* ParquetPreview.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4CDA5E2407FD0679D44B72C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					009042F38E08A1FDAAF8E01C = {
+						ProvisioningStyle = Manual;
+					};
+					D836B9305F45281898FFFD33 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = D3E7415913541C018306D2F2 /* Build configuration list for PBXProject "ParquetPreview" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4403DADFE51C0D7311DA78D9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9490F3557C87FBC0D68E46CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D836B9305F45281898FFFD33 /* ParquetPreview */,
+				009042F38E08A1FDAAF8E01C /* ParquetQuickLook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ECF370657AEDFFEFE433F03D /* Build Rust (parquet_ql) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust (parquet_ql)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/rust/target/universal/libparquet_ql.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/scripts/build-rust.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40805D6269D30F55C8D7323C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8640372267B6BF2BF96230 /* PreviewProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C9CAE952210B352C1BAA989 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DEDDB9BF0293C7FD4F6FA0 /* ParquetPreviewApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8B24CF906FEC0035709634B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 009042F38E08A1FDAAF8E01C /* ParquetQuickLook */;
+			targetProxy = 78E2B342AC8FF14EA1FA9543 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09EF5C619CA7085C0FE120CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		17121B0A4BBA60AA4989A56E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Preview/Preview.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/rust/include";
+				INFOPLIST_FILE = Preview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/rust/target/universal";
+				OTHER_LDFLAGS = (
+					"-lparquet_ql",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.cwitzl.ParquetPreview.QuickLook;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Preview/Bridging-Header.h";
+			};
+			name = Release;
+		};
+		381BDA3465A1F8CD3B704334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Preview/Preview.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/rust/include";
+				INFOPLIST_FILE = Preview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/rust/target/universal";
+				OTHER_LDFLAGS = (
+					"-lparquet_ql",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.cwitzl.ParquetPreview.QuickLook;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Preview/Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		41E9F31CF1C1DDDB3B8E491B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.cwitzl.ParquetPreview;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		779E8BADEFCC9EFCC94299AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.cwitzl.ParquetPreview;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F456AE9E9B9D6E8662319291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03AFFCCD715848CB2DAE2AB9 /* Build configuration list for PBXNativeTarget "ParquetQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				381BDA3465A1F8CD3B704334 /* Debug */,
+				17121B0A4BBA60AA4989A56E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B8699895AE0252BB7C9EB34F /* Build configuration list for PBXNativeTarget "ParquetPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E9F31CF1C1DDDB3B8E491B /* Debug */,
+				779E8BADEFCC9EFCC94299AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D3E7415913541C018306D2F2 /* Build configuration list for PBXProject "ParquetPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09EF5C619CA7085C0FE120CB /* Debug */,
+				F456AE9E9B9D6E8662319291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4CDA5E2407FD0679D44B72C /* Project object */;
+}

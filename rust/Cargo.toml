@@ -1,0 +1,21 @@
+[package]
+name = "parquet_ql"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+# staticlib → linked into the Quick Look extension; rlib → for the CLI example
+crate-type = ["staticlib", "rlib"]
+
+[dependencies]
+arrow-array = { version = "60.1.0", features = ["chrono-tz"] }
+arrow-cast = "60.1.0"
+arrow-schema = "60.1.0"
+parquet = { version = "60.1.0", default-features = false, features = ["arrow", "snap", "zstd", "flate2-rust_backend", "lz4", "brotli"] }
+serde_json = "1.0.154"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+# Keep panic = "unwind" (default): the FFI boundary catches panics via catch_unwind.

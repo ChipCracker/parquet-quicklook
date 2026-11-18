@@ -1,0 +1,17 @@
+build/
+rust/target/
+*.xcodeproj/xcuserdata/
+.DS_Store
+dist/
+
+# Secrets / Zertifikate / Signing
+*.p12
+*.cer
+*.pem
+*.key
+*.mobileprovision
+*.provisionprofile
+*.certSigningRequest
+.env*
+*.xcuserstate
+xcuserdata/
